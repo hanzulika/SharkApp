@@ -5,5 +5,5 @@ class ApplicationController < ActionController::Base
   # Changes to the importmap will invalidate the etag for HTML responses
   stale_when_importmap_changes
 
-  http_basic_authenticate_with name: "hanzu", password: "shark", except: [:index, :show]
+  http_basic_authenticate_with name: "hanzu", password: "shark", except: [ :index, :show ]
 end
