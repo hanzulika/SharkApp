@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Sharks" %>
+
+<h1>Sharks</h1>
+
+<div id="sharks">
+  <% @sharks.each do |shark| %>
+    <%= render shark %>
+    <p>
+      <%= link_to "Show this shark", shark %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New shark", new_shark_path %>
